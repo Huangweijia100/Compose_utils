@@ -22,6 +22,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.applicationtest.pager.PrePageTab
+import com.example.applicationtest.ui.components.TopSlideDialogDemo
 import com.example.applicationtest.ui.theme.ApplicationTestTheme
 
 class MainActivity : ComponentActivity() {
@@ -33,13 +34,14 @@ class MainActivity : ComponentActivity() {
             ApplicationTestTheme {
                 Scaffold {
                     Box(Modifier.padding(it).fillMaxSize()) {
-                        Image(
-                            painter = painterResource(R.drawable.ic_launcher_background),
-                            "",
-                            Modifier.fillMaxSize(),
-                            contentScale = ContentScale.FillBounds
-                        )
-                        PreImInput(Modifier.fillMaxWidth().height(500.dp).align(Alignment.BottomCenter))
+                        TopSlideDialogDemo()
+//                        Image(
+//                            painter = painterResource(R.drawable.ic_launcher_background),
+//                            "",
+//                            Modifier.fillMaxSize(),
+//                            contentScale = ContentScale.FillBounds
+//                        )
+//                        PreImInput(Modifier.fillMaxWidth().height(500.dp).align(Alignment.BottomCenter))
                     }
 //                    Box(Modifier.padding(it)) {
 //                        PrePageTab()
